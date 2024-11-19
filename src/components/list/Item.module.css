@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--gray-500);
+  gap: 0.9544rem;
+
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+}
+
+.container label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9544rem;
+}
+
+.container label p {
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: var(--gray-100);
+
+  transition: .2s all;
+}
+
+.container label p.paragraph-checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.container .checkbox {
+  min-width: 1.0625rem;
+  min-height: 1.0625rem;
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s all;
+}
+.container .checkbox-unchecked {
+  border: 1px solid var(--blue-500);
+}
+
+.container .checkbox-checked {
+  background-color: var(--purple-500);
+  border: 1px solid var(--purple-500);
+  color: var(--gray-100);
+}
+
+.container .checkbox-checked p {
+  text-decoration: dashed;
+}
+
+.container [type="checkbox"] {
+  display: none;
+}
+
+.container button {
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 1.5rem;
+  width: 1.5rem;
+  
+  cursor: pointer;
+
+  transition: 0.2s background-color;
+}
+
+.container button:hover {
+  background-color: var(--gray-400);
+}
+
+.container button:hover line,
+.container button:hover path {
+  stroke: var(--red-500);
+}

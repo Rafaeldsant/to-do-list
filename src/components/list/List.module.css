@@ -1,0 +1,9 @@
+.container {
+  margin-top: 2.3125rem;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}

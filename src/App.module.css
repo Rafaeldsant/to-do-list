@@ -1,0 +1,42 @@
+.wrapper {
+  max-width: 46rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: 8px;
+
+  transform: translateY(-50%);
+}
+
+.inputWrapper input {
+  background: var(--gray-500);
+  border-radius: 0.5rem;
+  padding: 16px;
+  color: var(--gray-100);
+  border: 0;
+  width: 100%;
+}
+
+.inputWrapper button {
+  background: var(--blue-700);
+  border: 0;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-100);
+  padding: 16px;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.inputWrapper button:hover {
+  background-color: var(--blue-500);
+}
+
+.inputWrapper button strong {
+  font-size: 14px;
+}
